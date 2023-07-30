@@ -19,6 +19,7 @@ namespace EmployesWebApp.Controllers
         {
             try
             {
+
                 return Ok(await this.employeeService.GetEmployees());
             }
             catch (Exception ex)
