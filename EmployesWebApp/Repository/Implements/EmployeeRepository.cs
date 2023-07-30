@@ -50,7 +50,7 @@ namespace EmployesWebApp.Repository.Implements
             }
             foreach(var item in request.data)
             {
-                item.employee_salary *= 12;
+                item.employee_anual_salary = item.employee_salary * 12;
             }
 
             return request.data;
@@ -82,7 +82,7 @@ namespace EmployesWebApp.Repository.Implements
             }
             if (request.data !=null)
             {
-                request.data.employee_salary *= 12;
+                request.data.employee_anual_salary = request.data.employee_salary * 12;
             }
             return request.data;
         }

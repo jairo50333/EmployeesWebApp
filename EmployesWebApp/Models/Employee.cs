@@ -11,5 +11,7 @@
         public long employee_age { get; set; }
 
         public string profile_image { get; set; }
+        public long employee_anual_salary { get; set; }
+
     }
 }
